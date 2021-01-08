@@ -1,0 +1,23 @@
+:root {
+    --bar-width: 0;
+}
+
+.load-bar {
+    width: 50%;
+    height: 50px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.load-bar::after {
+    content: '';
+    width: var(--bar-width);
+    height: 50px;
+    position: absolute;
+    display: block;
+    background: linear-gradient(to right, #ff9, #48e);
+}
+
+video {
+    max-width: 100%;
+}
